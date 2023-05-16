@@ -4,12 +4,19 @@
 
 <center class="w-5/6 m-auto">
 	<h1 class="text-3xl font-bold m-5 underline">Welcome to my bio.</h1>
-	<p>
+	<p class="m-2">
 		Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore nulla nostrum similique
 		temporibus expedita voluptatem reprehenderit porro eligendi esse accusantium quo dolores
 		officiis, non necessitatibus, impedit veniam mollitia quam cum?
 	</p>
+	<p class="m-2">
+		Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore nulla nostrum similique
+		temporibus expedita voluptatem reprehenderit porro eligendi esse accusantium quo dolores
+		officiis, non necessitatibus, impedit veniam mollitia quam cum?
+	</p>
+	<p class="m-2">Find me on:<br />GitHub Twitter ...</p>
 </center>
+
 <!-- <button class="m-3" use:clickOutside={sidebar.closeSidebar} on:click={sidebar.openSidebar}
 	>Open</button
 > -->
