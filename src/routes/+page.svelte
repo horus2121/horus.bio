@@ -1,8 +1,15 @@
-<h1 class="text-3xl font-bold m-3 underline">Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+	import { clickOutside } from '$utils/clickOutside';
+</script>
 
-<style lang="postcss">
-	:global(html) {
-		background-color: white;
-	}
-</style>
+<center class="w-5/6 m-auto">
+	<h1 class="text-3xl font-bold m-5 underline">Welcome to my bio.</h1>
+	<p>
+		Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore nulla nostrum similique
+		temporibus expedita voluptatem reprehenderit porro eligendi esse accusantium quo dolores
+		officiis, non necessitatibus, impedit veniam mollitia quam cum?
+	</p>
+</center>
+<!-- <button class="m-3" use:clickOutside={sidebar.closeSidebar} on:click={sidebar.openSidebar}
+	>Open</button
+> -->
