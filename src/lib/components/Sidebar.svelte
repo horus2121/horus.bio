@@ -11,7 +11,7 @@
 	on:mouseleave={sidebar.closeSidebar}
 	use:clickOutside={sidebar.closeSidebar}
 >
-	<a href="/" class="xl my-1">Home</a>
-	<a href="/" class="xl my-1">Project</a>
-	<a href="/" class="xl my-1">Blog</a>
+	<a href="/" class="xl my-1">About</a>
+	<a href="/project" class="xl my-1">Project</a>
+	<a href="/blog" class="xl my-1">Blog</a>
 </nav>

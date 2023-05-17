@@ -16,7 +16,3 @@
 	</p>
 	<p class="m-2">Find me on:<br />GitHub Twitter ...</p>
 </center>
-
-<!-- <button class="m-3" use:clickOutside={sidebar.closeSidebar} on:click={sidebar.openSidebar}
-	>Open</button
-> -->
