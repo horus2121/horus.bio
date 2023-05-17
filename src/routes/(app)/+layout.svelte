@@ -3,7 +3,7 @@
 	import Sidenav from '$components/Sidebar.svelte';
 	import SidebarTrigger from '$components/SidebarTrigger.svelte';
 	import type { TPosition } from '$types';
-	import '../app.css';
+	import '../../app.css';
 
 	const positions: TPosition[] = ['left', 'right'];
 </script>
