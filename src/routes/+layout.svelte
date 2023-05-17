@@ -12,9 +12,11 @@
 	<link rel="stylesheet" href="https://unpkg.com/mono-icons@1.0.5/iconfont/icons.css" />
 </svelte:head>
 
-{#each positions as position}
-	<SidebarTrigger {position} />
-{/each}
-<Sidenav />
-<slot />
-<Footer />
+<div class="relative">
+	{#each positions as position}
+		<SidebarTrigger {position} />
+	{/each}
+	<Sidenav />
+	<slot />
+	<Footer />
+</div>

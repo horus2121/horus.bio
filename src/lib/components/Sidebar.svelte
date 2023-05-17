@@ -1,15 +1,14 @@
 <script lang="ts">
-	import { sidebar } from '$lib/store';
-	import { clickOutside } from '$utils/clickOutside';
-
-	let sidebarOn: boolean;
-	sidebar.subscribe((v) => (sidebarOn = v));
+	import { sidebarStore } from '$lib/store';
+	import { clickOutside } from '$directives/clickOutside';
 </script>
 
 <nav
-	class="fixed flex flex-col w-20 h-1/2 {!sidebarOn ? 'collapse' : ''}  ml-2 z-50"
-	on:mouseleave={sidebar.closeSidebar}
-	use:clickOutside={sidebar.closeSidebar}
+	class="fixed flex flex-col w-20 h-1/2 m-2 z-50 top-10
+	{!$sidebarStore ? 'collapse' : ''}  
+	"
+	on:mouseleave={sidebarStore.closeSidebar}
+	use:clickOutside={sidebarStore.closeSidebar}
 >
 	<a href="/" class="xl my-1">About</a>
 	<a href="/project" class="xl my-1">Project</a>
