@@ -1,71 +1,10 @@
-<script lang="ts">
-	import { sidebarStore } from '$lib/store';
-</script>
-
-<center
-	class="w-5/6 m-auto py-16
-{$sidebarStore ? 'opacity-30' : ''}"
->
-	<h1 class="text-3xl font-bold mb-5 underline">Welcome to my bio.</h1>
-	<p class="m-2">
-		Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore nulla nostrum similique
-		temporibus expedita voluptatem reprehenderit porro eligendi esse accusantium quo dolores
-		officiis, non necessitatibus, impedit veniam mollitia quam cum?
-	</p>
-	<p class="m-2">
-		Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore nulla nostrum similique
-		temporibus expedita voluptatem reprehenderit porro eligendi esse accusantium quo dolores
-		officiis, non necessitatibus, impedit veniam mollitia quam cum?
-	</p>
-	<p class="m-2">
-		Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore nulla nostrum similique
-		temporibus expedita voluptatem reprehenderit porro eligendi esse accusantium quo dolores
-		officiis, non necessitatibus, impedit veniam mollitia quam cum?
-	</p>
-	<p class="m-2">
-		Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore nulla nostrum similique
-		temporibus expedita voluptatem reprehenderit porro eligendi esse accusantium quo dolores
-		officiis, non necessitatibus, impedit veniam mollitia quam cum?
-	</p>
-	<p class="m-2">
-		Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore nulla nostrum similique
-		temporibus expedita voluptatem reprehenderit porro eligendi esse accusantium quo dolores
-		officiis, non necessitatibus, impedit veniam mollitia quam cum?
-	</p>
-	<p class="m-2">
-		Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore nulla nostrum similique
-		temporibus expedita voluptatem reprehenderit porro eligendi esse accusantium quo dolores
-		officiis, non necessitatibus, impedit veniam mollitia quam cum?
-	</p>
-	<p class="m-2">
-		Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore nulla nostrum similique
-		temporibus expedita voluptatem reprehenderit porro eligendi esse accusantium quo dolores
-		officiis, non necessitatibus, impedit veniam mollitia quam cum?
-	</p>
-	<p class="m-2">
-		Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore nulla nostrum similique
-		temporibus expedita voluptatem reprehenderit porro eligendi esse accusantium quo dolores
-		officiis, non necessitatibus, impedit veniam mollitia quam cum?
-	</p>
-	<p class="m-2">
-		Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore nulla nostrum similique
-		temporibus expedita voluptatem reprehenderit porro eligendi esse accusantium quo dolores
-		officiis, non necessitatibus, impedit veniam mollitia quam cum?
-	</p>
-	<p class="m-2">
-		Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore nulla nostrum similique
-		temporibus expedita voluptatem reprehenderit porro eligendi esse accusantium quo dolores
-		officiis, non necessitatibus, impedit veniam mollitia quam cum?
-	</p>
-	<p class="m-2">
-		Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore nulla nostrum similique
-		temporibus expedita voluptatem reprehenderit porro eligendi esse accusantium quo dolores
-		officiis, non necessitatibus, impedit veniam mollitia quam cum?
-	</p>
-	<p class="m-2">
-		Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore nulla nostrum similique
-		temporibus expedita voluptatem reprehenderit porro eligendi esse accusantium quo dolores
-		officiis, non necessitatibus, impedit veniam mollitia quam cum?
-	</p>
-	<p class="m-2">Find me on:<br />GitHub Twitter ...</p>
-</center>
+<h1 class="text-2xl font-bold mb-5 underline">Horus H.</h1>
+<p class="m-2">
+	Howdy! I am a passionate full-stack developer and part-time adventurer. I'm always eager to learn,
+	constantly creating new things, and occasionally finding time to sleep. As a developer, I love
+	debugging life's mysteries and bringing ideas to life. You can explore my projects, including
+	Vitest, Slidev, VueUse, and more. When I'm not coding, you'll find me indulging in photography,
+	traveling, and capturing moments. Connect with me on GitHub, Mastodon, Twitter, Discord Server,
+	YouTube, Twitch, and Instagram. Let's hang out, explore, and create together!
+</p>
+<p class="m-2">Find me on:<br />GitHub Twitter ...</p>
