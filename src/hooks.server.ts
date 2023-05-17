@@ -1,8 +1,8 @@
-// export function handleError({ event, error }) {
-// 	console.error(error.stack);
+export function handleError({ event, error }) {
+	//  @ts-expect-error. - bypass unknown error
+	console.error(error.stack);
 
-// 	return {
-// 		message: 'everything is fine.',
-// 		code: error.code ?? '5173'
-// 	};
-// }
+	return {
+		message: 'everything is fine.'
+	};
+}
