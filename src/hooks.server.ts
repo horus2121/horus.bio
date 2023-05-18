@@ -1,4 +1,4 @@
-export function handleError({ event, error }) {
+export function handleError({ error }) {
 	//  @ts-expect-error. - bypass unknown error
 	console.error(error.stack);
 

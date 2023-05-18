@@ -1,19 +1,16 @@
 <script lang="ts">
 	import { sidebarStore } from '$lib/store';
 	import type { TPosition } from '$types';
+	import Icons from './Icons.svelte';
 
 	export let position: TPosition;
 </script>
 
 <div
-	class="fixed w-3 h-[10%] top-10
+	class="fixed w-4 h-[10%] top-[120px] opacity-40
 	{$sidebarStore ? 'collapse' : ''} 
 	{position === 'left' ? 'left-0 animate-bounce' : 'right-0'}"
 	on:mouseenter={position === 'left' ? sidebarStore.openSidebar : () => {}}
 >
-	<i
-		class="mi relative opacity-40
-	{position === 'left' ? 'mi-tag -left-0.5' : 'mi-options-vertical right-0.5'}
-	"
-	/>
+	<Icons name={position === 'left' ? 'tag' : 'moreVertical'} />
 </div>

@@ -9,17 +9,13 @@
 	const positions: TPosition[] = ['left', 'right'];
 </script>
 
-<svelte:head>
-	<link rel="stylesheet" href="https://unpkg.com/mono-icons@1.0.5/iconfont/icons.css" />
-</svelte:head>
-
 <div class="relative">
 	{#each positions as position}
 		<SidebarTrigger {position} />
 	{/each}
 	<Sidenav />
 	<main
-		class="w-5/6 min-h-screen m-auto py-10
+		class="w-5/6 min-h-screen m-auto px-20 py-40
 		{$sidebarStore ? 'opacity-30' : ''}
 	"
 	>
