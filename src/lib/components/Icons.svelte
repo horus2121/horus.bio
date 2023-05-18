@@ -19,4 +19,4 @@
 	export let name: keyof typeof icons;
 </script>
 
-<svelte:component this={icons[name]} {...$$props} />
+<svelte:component this={icons[name]} />
