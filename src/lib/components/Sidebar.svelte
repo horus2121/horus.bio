@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { sidebarStore } from '$lib/store';
-	import { clickOutside } from '$directives/clickOutside';
+	import { clickOutside } from '$lib/utils/clickOutside';
 	import Icons from './Icons.svelte';
 
 	const navItems = [
@@ -15,7 +15,7 @@
 			icon: 'laptop'
 		},
 		{
-			href: '/blog',
+			href: '/posts',
 			content: 'Blog',
 			icon: 'cloud'
 		}
@@ -31,7 +31,9 @@
 >
 	<ul class="my-1">
 		{#each navItems as item}
-			<li class="flex px-2 rounded-md hover:bg-[var(--c-3)]">
+			<li
+				class="flex px-2 rounded-md hover:bg-[var(--c-3)]"
+			>
 				<!-- 
 					set it invisible at the start of animation 
 				-->

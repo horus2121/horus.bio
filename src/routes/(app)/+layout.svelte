@@ -1,4 +1,5 @@
 <script lang="ts">
+	import * as config from '$lib/config';
 	import Footer from '$components/Footer.svelte';
 	import Sidenav from '$components/Sidebar.svelte';
 	import SidebarTrigger from '$components/SidebarTrigger.svelte';
@@ -8,6 +9,10 @@
 
 	const positions: TPosition[] = ['left', 'right'];
 </script>
+
+<svelte:head>
+	<title>{config.title}</title>
+</svelte:head>
 
 <div class="relative">
 	{#each positions as position}
