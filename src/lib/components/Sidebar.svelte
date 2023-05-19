@@ -18,6 +18,16 @@
 			href: '/posts',
 			content: 'Blog',
 			icon: 'cloud'
+		},
+		{
+			href: '/playground',
+			content: 'Playground',
+			icon: 'castle'
+		},
+		{
+			href: '/gallery',
+			content: 'Gallery',
+			icon: 'camera'
 		}
 	];
 </script>
@@ -39,7 +49,7 @@
 				-->
 				<a
 					href={item.href}
-					class="py-2 flex space-x-2
+					class="py-3 flex space-x-2
 					{!$sidebarStore ? 'opacity-0' : ''}  
 				"
 				>

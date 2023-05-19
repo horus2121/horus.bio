@@ -10,7 +10,11 @@
 	class="fixed w-4 h-[10%] top-[120px] opacity-40
 	{$sidebarStore ? 'collapse' : ''} 
 	{position === 'left' ? 'left-0 animate-bounce' : 'right-0'}"
-	on:mouseenter={position === 'left' ? sidebarStore.openSidebar : () => {}}
+	on:mouseenter={position === 'left'
+		? sidebarStore.openSidebar
+		: () => {}}
 >
-	<Icons name={position === 'left' ? 'tag' : 'moreVertical'} />
+	<Icons
+		name={position === 'left' ? 'tag' : 'moreVertical'}
+	/>
 </div>
