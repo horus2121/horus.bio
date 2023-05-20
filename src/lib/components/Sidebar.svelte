@@ -76,17 +76,39 @@
 		}
 	}
 
-	nav:hover li a {
+	@keyframes fadeOut {
+		0% {
+			opacity: 0.8;
+			transform: translateX(0%);
+		}
+
+		100% {
+			opacity: 0;
+			transform: translateX(-50%);
+		}
+	}
+
+	nav li a {
 		animation: fadeIn 0.5s ease-out forwards;
 	}
 
-	nav:hover li:nth-child(1) a {
-		animation-delay: 0.5;
+	nav:not(:hover) li a {
+		animation: fadeOut 0.5s ease-out forwards;
 	}
-	nav:hover li:nth-child(2) a {
+
+	nav:hover li:nth-child(1) {
+		animation-delay: 0.5s;
+	}
+	nav:hover li:nth-child(2) {
+		animation-delay: 0.6;
+	}
+	nav:hover li:nth-child(3) {
 		animation-delay: 0.7;
 	}
-	nav:hover li:nth-child(3) a {
-		animation-delay: 0.9;
+	nav:hover li:nth-child(4) {
+		animation-delay: 0.8s;
+	}
+	nav:hover li:nth-child(5) {
+		animation-delay: 0.9s;
 	}
 </style>
