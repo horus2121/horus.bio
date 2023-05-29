@@ -14,23 +14,35 @@
 		},
 		{
 			color: '777572',
-			rotateSpeed: 4
-		},
-		{
-			color: '908a86',
 			rotateSpeed: 8
 		},
 		{
-			color: 'c6c2bb',
-			rotateSpeed: 16
+			color: '908a86',
+			rotateSpeed: 2
 		},
 		{
-			color: 'e1e0dc',
+			color: 'c6c2bb',
+			rotateSpeed: 8
+		},
+		{
+			color: '000000',
 			rotateSpeed: 32
 		},
 		{
 			color: 'f2f2f2',
-			rotateSpeed: 64
+			rotateSpeed: 8
+		},
+		{
+			color: '16323b',
+			rotateSpeed: 2
+		},
+		{
+			color: '777572',
+			rotateSpeed: 8
+		},
+		{
+			color: '908a86',
+			rotateSpeed: 2
 		}
 	];
 </script>
