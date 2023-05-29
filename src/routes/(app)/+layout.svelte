@@ -6,6 +6,7 @@
 	import { sidebarStore } from '$lib/store';
 	import type { TPosition } from '$types';
 	import '../../app.css';
+	import SidebarGroup from '$components/SidebarGroup.svelte';
 
 	const positions: TPosition[] = ['left', 'right'];
 </script>
@@ -15,10 +16,7 @@
 </svelte:head>
 
 <div class="relative">
-	{#each positions as position}
-		<SidebarTrigger {position} />
-	{/each}
-	<Sidenav />
+	<SidebarGroup />
 	<main
 		class="w-5/6 min-h-screen m-auto px-20 py-40
 		{$sidebarStore ? 'opacity-30' : ''}

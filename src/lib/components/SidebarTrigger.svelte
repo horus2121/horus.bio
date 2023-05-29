@@ -7,9 +7,9 @@
 </script>
 
 <div
-	class="fixed w-4 h-[10%] top-[120px] opacity-40
+	class="fixed w-4 h-[10%] top-[80px] opacity-40
 	{$sidebarStore ? 'collapse' : ''} 
-	{position === 'left' ? 'left-0 animate-bounce' : 'right-0'}"
+	{position === 'left' ? 'left-0.5' : 'right-0.5'}"
 	on:mouseenter={position === 'left'
 		? sidebarStore.openSidebar
 		: () => {}}

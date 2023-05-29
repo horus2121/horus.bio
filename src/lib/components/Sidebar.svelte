@@ -33,7 +33,7 @@
 </script>
 
 <nav
-	class="fixed flex flex-col w-[150px] h-auto z-50 px-5 top-[100px] rounded-xl
+	class="fixed flex flex-col w-[150px] h-auto z-50 px-5 top-[80px] rounded-xl
 	{!$sidebarStore ? 'collapse' : ''}  
 	"
 	on:mouseleave={sidebarStore.closeSidebar}
