@@ -51,7 +51,7 @@
 	<h1
 		class="text-3xl text-[var(--c-5)] font-bold mb-5 underline"
 	>
-		Playground.
+		Demo.
 	</h1>
 
 	<div

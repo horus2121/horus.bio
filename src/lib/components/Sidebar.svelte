@@ -20,8 +20,8 @@
 			icon: 'cloud'
 		},
 		{
-			href: '/playground',
-			content: 'Playground',
+			href: '/demo',
+			content: 'Demo',
 			icon: 'castle'
 		},
 		{
