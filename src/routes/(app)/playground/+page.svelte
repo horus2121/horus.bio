@@ -1,8 +1,59 @@
-<h1
-	class="text-3xl text-[var(--c-5)] font-bold mb-5 underline"
->
-	Playground.
-</h1>
-<div class="text-md text-[var(--c-5)]">
-	<p class="m-1">WIP 🤡</p>
+<script lang="ts">
+	import Cube from '$components/three/Cube.svelte';
+	import { Canvas } from '@threlte/core';
+
+	type TConfig = {
+		color: string;
+		rotateSpeed: number;
+	};
+
+	const configs: TConfig[] = [
+		{
+			color: '16323b',
+			rotateSpeed: 2
+		},
+		{
+			color: '777572',
+			rotateSpeed: 4
+		},
+		{
+			color: '908a86',
+			rotateSpeed: 8
+		},
+		{
+			color: 'c6c2bb',
+			rotateSpeed: 16
+		},
+		{
+			color: 'e1e0dc',
+			rotateSpeed: 32
+		},
+		{
+			color: 'f2f2f2',
+			rotateSpeed: 64
+		}
+	];
+</script>
+
+<div>
+	<h1
+		class="text-3xl text-[var(--c-5)] font-bold mb-5 underline"
+	>
+		Playground.
+	</h1>
+
+	<div
+		class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1 text-md text-[var(--c-5)]"
+	>
+		{#each configs as config, index}
+			<div class="w-auto">
+				<Canvas>
+					<Cube {config} />
+				</Canvas>
+				<div class=" text-center w-auto">
+					<span>3D Cubes {index}</span>
+				</div>
+			</div>
+		{/each}
+	</div>
 </div>
