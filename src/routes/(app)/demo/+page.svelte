@@ -1,48 +1,58 @@
 <script lang="ts">
 	import Cube from '$components/three/Cube.svelte';
-	import { Canvas } from '@threlte/core';
+	import { Canvas, type Position } from '@threlte/core';
 
 	type TConfig = {
 		color: string;
 		rotateSpeed: number;
+		position: Position;
 	};
 
 	const configs: TConfig[] = [
 		{
 			color: '16323b',
-			rotateSpeed: 2
+			rotateSpeed: 2,
+			position: { x: 2, y: 2, z: 3 }
 		},
 		{
 			color: '777572',
-			rotateSpeed: 8
+			rotateSpeed: 8,
+			position: { x: 4, y: 2, z: 3 }
 		},
 		{
 			color: '908a86',
-			rotateSpeed: 2
+			rotateSpeed: 2,
+			position: { x: 6, y: 2, z: 3 }
 		},
 		{
 			color: 'c6c2bb',
-			rotateSpeed: 8
+			rotateSpeed: 8,
+			position: { x: 3, y: 2, z: 3 }
 		},
 		{
 			color: '000000',
-			rotateSpeed: 32
+			rotateSpeed: 32,
+			position: { x: 3, y: 4, z: 3 }
 		},
 		{
 			color: 'f2f2f2',
-			rotateSpeed: 8
+			rotateSpeed: 8,
+			position: { x: 3, y: 6, z: 3 }
 		},
 		{
 			color: '16323b',
-			rotateSpeed: 2
+			rotateSpeed: 2,
+			position: { x: 3, y: 3, z: 2 }
 		},
 		{
 			color: '777572',
-			rotateSpeed: 8
+			rotateSpeed: 8,
+			position: { x: 3, y: 3, z: 4 }
 		},
 		{
 			color: '908a86',
-			rotateSpeed: 2
+			rotateSpeed: 2,
+			position: { x: 3, y: 3, z: 6 }
 		}
 	];
 </script>
@@ -55,17 +65,12 @@
 	</h1>
 
 	<div
-		class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1 text-md text-[var(--c-5)]"
+		class="w-auto h-[50vh] gap-1 text-md text-[var(--c-5)]"
 	>
-		{#each configs as config, index}
-			<div class="w-auto">
-				<Canvas>
-					<Cube {config} />
-				</Canvas>
-				<div class=" text-center w-auto">
-					<span>3D Cubes {index}</span>
-				</div>
-			</div>
-		{/each}
+		<Canvas>
+			{#each configs as config, index}
+				<Cube {config} />
+			{/each}
+		</Canvas>
 	</div>
 </div>
